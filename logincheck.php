@@ -5,12 +5,12 @@ session_start();
 //Khai báo utf-8 để hiển thị được tiếng việt
 header('Content-Type: text/html; charset=UTF-8');
 //Xử lý đăng nhập
-echo "ma66";
+
 if (isset($_POST['login']))
 {
 //Kết nối tới database
 include('connectdb.php');
-  echo"ma 67";
+  
 //Lấy dữ liệu nhập vào
 $username = $_POST['username'];
 $password = $_POST['password'];
