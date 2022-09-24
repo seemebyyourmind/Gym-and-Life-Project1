@@ -1,0 +1,10 @@
+body {
+  background-color: #2f6a87;
+  padding: 7% 15%;
+}
+table {
+  background-color: azure;
+}
+.logout {
+  text-align: right;
+}

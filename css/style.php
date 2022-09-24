@@ -1,7 +1,7 @@
 
- <?php header("Content-type: text/css"); ?> 
+  <?php header("Content-type: text/css"); ?> 
 body {
-  height: 1800px;
+ 
   background-color: #2f6a87;
   padding: 7% 15%;
 }
@@ -23,7 +23,11 @@ body {
 }
 .forget_password{
   text-decoration:none;
-margin-left:150px;
-  
-  
+  margin-left:150px;
+   -->
+ 
 }
+ .btn{
+    margin:20px 30px;
+   
+  } 
