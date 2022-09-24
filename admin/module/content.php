@@ -11,7 +11,17 @@
 					}elseif(($tam == 'sanpham')&&($tam1 == 'lietke')){
 						
 						include('module/quanlysanpham/lietke.php');
-					}elseif(($tam == 'hieusp')&&($tam1 == 'them')){
+					}elseif(($tam == 'sanpham')&&($tam1 == 'them')){
+						
+						include('module/quanlysanpham/them.php');
+					}elseif(($tam == 'sanpham')&&($tam1 == 'lietke')){
+						
+						include('module/quanlysanpham/lietke.php');
+					}elseif(($tam == 'sanpham')&&($tam1 == 'sua')){
+						
+						include('module/quanlysanpham/sua.php');
+					}
+					elseif(($tam == 'hieusp')&&($tam1 == 'them')){
 						
 					
 					// }

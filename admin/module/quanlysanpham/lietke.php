@@ -46,7 +46,7 @@
                                           echo "<td>";
                                                                              
                                         echo "<a href='module/quanlysanpham/xuly.php?id=". $row['id'] ."' title='Update Record' data-toggle='tooltip'> <img src=\"../image/delete.png\" width=\"30\" height=\"30\" /></a>";
-                                        echo "<a href='module/quanlysanpham/xuly.php?id=". $row['id'] ."' title='Update Record' data-toggle='tooltip'> <img src=\"../image/edit.png\" width=\"30\" height=\"30\" /></a>";
+                                        echo "<a href='index.php?quanly=sanpham&ac=sua&id=". $row['id'] ."' title='Update Record' data-toggle='tooltip'> <img src=\"../image/edit.png\" width=\"30\" height=\"30\" /></a>";
                                         echo "</td>";
                                     echo "</tr>";
                                 }

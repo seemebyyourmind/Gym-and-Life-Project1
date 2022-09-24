@@ -2,7 +2,7 @@
 
 <!-- <a href="index.php?quanly=sanpham&ac=lietke">Liệt kê sp</a>  -->
 </div>
-<form action="xuly.php" method="post" enctype="multipart/form-data">
+<form action="module/quanlysanpham/xuly.php" method="post" enctype="multipart/form-data">
 <h3>&nbsp;</h3>
 <table width="600" border="1">
   <tr>
@@ -40,7 +40,7 @@
   <tr>
   <?php
 
-  $sql_loaisp = "select id,name from product";
+  $sql_loaisp = "select id,name from catalog";
   $row_loaisp=mysqli_query($connect,$sql_loaisp);
   ?>
     <td>Loại sản phẩm</td>
