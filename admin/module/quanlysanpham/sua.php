@@ -4,47 +4,48 @@
 	$dong=mysqli_fetch_array($row);
  ?>
 <div class="button_themsp">
-<a href="index.php?quanly=sanpham&ac=lietke">Liệt kê sp</a> 
+<a  class="btn btn-primary" href="index.php?quanly=sanpham&ac=lietke">Liệt kê sp</a> 
+
 </div>
 <form action="module/quanlysanpham/xuly.php?id=<?php echo $dong['id'] ?>" method="post" enctype="multipart/form-data">
-<h3>&nbsp;</h3>
-<table width="600" border="1"> 
 
-  <tr>
-    <td colspan="2" style="text-align:center;font-size:25px;">Sửa thông tin sản phẩm</td>
-  </tr>
-  <tr>
-    <td width="97">Tên sản phẫm</td>
-    <td width="87"><input type="text" name="tensp" value="<?php echo $dong['name'] ?>"></td>
-  </tr>
-  <tr>
-    <td>Giá sản phẩm</td>
-    <td><input type="text" name="giasp" value="<?php echo $dong['price'] ?>"></td>
-  </tr>
-  <tr>
-    <td>Hình ảnh</td>
-    <td><input type="file" name="hinhanh" /><img src="modules/quanlysanpham/uploads/<?php echo $dong['image_link'] ?>" width="80" height="80"></td>
-  </tr>
-  <tr>
-    <td>Số lượng </td>
-    <td><input type="text" name="soluong" value="<?php echo $dong['number'] ?>"></td>
-  </tr>
-  <tr>
-    <td>Đã bán</td>
-    <td><input type="text" name="daban" value="<?php echo $dong['number_buy'] ?>"></td>
-  </tr>
-  <tr>
-    <td>Giảm giá</td>
-    <td><textarea name="giamgia" cols="40" rows="10"><?php echo $dong['discount'] ?></textarea></td>
-  </tr>
+<div> 
+
+  <div class="container input-group mb-3">
+    <span class="col-3 input-group-text">Sửa thông tin sản phẩm</span>
+  </div>
+  <div class=" input-group mb-3">
+    <span class="col-2 input-group-text">Tên sản phẫm</span>
+   <input class="form-control" type="text" name="tensp" value="<?php echo $dong['name'] ?>">
+  </div>
+  <div class=" input-group mb-3">
+    <span class="col-2 input-group-text">Giá sản phẩm</span>
+    <input class="form-control" type="text" name="giasp" value="<?php echo $dong['price'] ?>">
+  </div>
+  <div class=" input-group mb-3">
+    <span class="col-2 input-group-text">Hình ảnh</span>
+  <input class="form-control" type="file" name="hinhanh" /><img src="modules/quanlysanpham/uploads/<?php echo $dong['image_link'] ?>" width="80" height="80">
+  </div>
+  <div class=" input-group mb-3">
+    <span class="col-2 input-group-text">Số lượng </span>
+    <input class="form-control" type="text" name="soluong" value="<?php echo $dong['number'] ?>">
+  </div>
+  <div class=" input-group mb-3">
+    <span class="col-2 input-group-text">Đã bán</span>
+    <input class="form-control" type="text" name="daban" value="<?php echo $dong['number_buy'] ?>"></span>
+</div>
+  <div class=" input-group mb-3">
+    <span class="col-2 input-group-text">Giảm giá</span>
+    <input class="form-control" name="giamgia" value="<?php echo $dong['discount'] ?>">
+  </div>
  
-  <tr>
+  <div class=" input-group mb-3">
   <?php
   $sql_loaisp = "select * from catalog";
   $row_loaisp=mysqli_query($connect,$sql_loaisp);
   ?>
-    <td>Loại sản phẩm</td>
-    <td><select name="loaisp">
+    <span class="col-2 input-group-text">Loại sản phẩm</span>
+    <select class="form-select" name="loaisp">
      <?php
 	while($dong_loaisp=mysqli_fetch_array($row_loaisp)){
 		if($dong['catalog_id']==$dong_loaisp['id']){
@@ -58,13 +59,14 @@
 	}
 	}
 		?>
-    </select></td>
-  </tr>
+    </select>
+  </div>
   
-  <tr>
-    <td colspan="2"><div align="center">
-      <input type="submit" name="sua" value="Sửa sản phẩm">
-    </div></td>
-  </tr>
-</table>
+  <div>
+  <div align="center">
+     
+    <button class="btn btn-primary" type="submit" name="them" value="Sửa sản phẩm">Sửa sản phẩm</button>
+    </div>
+  </div>
+</div>
 </form>
