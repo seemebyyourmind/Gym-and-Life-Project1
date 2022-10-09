@@ -18,9 +18,20 @@
  
 </div>
   
-<?php
 
+<?php
+	if(isset($_POST['logout'])){
+		unset($_SESSION['dangnhap']);
+		header('location:index.php');
+	}
 ?>
+<div class="header">
+    	<h3>USER PAGE</h3>
+    </div>
+     <form  style="text-align: right;"  class="logout" action="" method="post" enctype="multipart/form-data">
+            <input  class="  btn btn-success text-right"type="submit" name="logout" value="Đăng xuất" />
+			
+     </form>
   <!-- <img src="image/portrait-young-sportive-girl-training-with-dumbbells-isolated-blue-background-neon.jpg" alt="Gym-image"> -->
   <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">

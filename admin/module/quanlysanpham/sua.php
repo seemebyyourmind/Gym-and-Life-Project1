@@ -24,7 +24,7 @@
   </div>
   <div class=" input-group mb-3">
     <span class="col-2 input-group-text">Hình ảnh</span>
-  <input class="form-control" type="file" name="hinhanh" /><img src="modules/quanlysanpham/uploads/<?php echo $dong['image_link'] ?>" width="80" height="80">
+  <input class="form-control" type="file" name="hinhanh" /><img src="module/quanlysanpham/uploads/<?php echo $dong['image_link'] ?>" width="120" height="120">
   </div>
   <div class=" input-group mb-3">
     <span class="col-2 input-group-text">Số lượng </span>
@@ -65,7 +65,7 @@
   <div>
   <div align="center">
      
-    <button class="btn btn-primary" type="submit" name="them" value="Sửa sản phẩm">Sửa sản phẩm</button>
+    <button class="btn btn-primary" type="submit" name="sua" value="Sửa sản phẩm">Sửa sản phẩm</button>
     </div>
   </div>
 </div>

@@ -10,27 +10,27 @@
   </div>
   <div class=" input-group mb-3">
     <span class="col-2 input-group-text">Tên sản phẫm</span>
-    <input  class="form-control" type="text" name="tensp">
+    <input  class="form-control" type="text" name="tensp" required>
   </div>
   <div class="input-group mb-3">
     <span class=" col-2 input-group-text">Hình ảnh</span>
-    <input class="form-control" type="file" name="hinhanh" />
+    <input class="form-control" type="file" value="no-image.jpg" name="hinhanh" >
   </div>
   <div class="input-group mb-3">
     <span class="col-2 input-group-text">Giá sản phẩm</span>
-    <input class="form-control" type="text" name="giasp">
+    <input class="form-control" type="text" name="giasp" required>
   </div>
    <div class="input-group mb-3">
     <span class="col-2 input-group-text">Giảm giá</span>
-    <input class="form-control" type="text" name="giamgia">
+    <input class="form-control" type="text" name="giamgia" required>
   </div>
   <div class="input-group mb-3">
     <span class="col-2 input-group-text">Số lượng</span>
-  <input class="form-control" type="text" name="soluong">
+  <input class="form-control" type="text" name="soluong" required>
   </div>
   <div class="input-group mb-3">
     <span class="col-2 input-group-text">Đã bán</span>
-   <input class="form-control" value="0" name="daban">
+   <input class="form-control" value="0" name="daban" required>
   </div>
   <!-- <div>
     <span>Số lượng</span>

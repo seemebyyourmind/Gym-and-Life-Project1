@@ -19,7 +19,7 @@
             <a class="nav-link fs-5" href="index.php?quanly=nguoidung&ac=lietke">Quản lý người dùng</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fs-5" href="index.php?quanly=sanpham&ac=them">Quản lý đơn hàng </a>
+            <a class="nav-link fs-5" href="#">Quản lý đơn hàng </a>
           </li>
           
         </ul>

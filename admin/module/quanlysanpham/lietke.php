@@ -6,6 +6,7 @@
                         <h2 class="pull-left">Thông tin Sản phẩm</h2>
                         <a href="index.php?quanly=sanpham&ac=them" class="btn btn-success pull-right">Thêm mới</a>
                     </div>
+                    
                     <?php
                 
                         
@@ -39,7 +40,7 @@
                                         echo "<td>" . $row['name'] . "</td>";
                                         echo "<td>" . $row2[0] . "</td>";
                                         echo "<td>" . $row['price'] . "</td>";
-                                        echo "<td>" . $row['image_link'] . "</td>";
+                                        echo "<td> <img src=\"module/quanlysanpham/uploads/". $row['image_link']."\" alt=\"\" style=\"width:60px;height:60px;\">"  . "</td>";
                                         echo "<td>" . $row['number'] . "</td>";
                                         echo "<td>" . $row['number_buy'] . "</td>";
                                         echo "<td>" . $row['discount'] . "</td>";
