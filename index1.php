@@ -19,8 +19,8 @@
  
 </div>
 <?php
-        include('connectdb.php');
-        include('part/header.php');
+    include('connectdb.php');
+    include('part/header.php');
 		include('part/menu.php');
 		include('part/content.php');
     // include('module/quanlysanpham/them.php');

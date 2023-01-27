@@ -2,8 +2,8 @@
     
 <?php
            
-                        
-                $sql = "SELECT * FROM product WHERE catalog_id='5'";
+            // $search=$_GET['search'];      
+                $sql = "SELECT * FROM product WHERE name like '%$search%'";
                 if($result = mysqli_query($connect, $sql)){
                     if(mysqli_num_rows($result) > 0){
                         
@@ -12,7 +12,7 @@
                             
                                 echo "<div class=\"col\">";
                                 echo " <div class=\"card h-100\">";
-                                echo"<img src=\"admin/module/quanlysanpham/uploads/". $row['image_link']."\" alt=\"\" style=\"width:60px;height:60px;\">"  ;
+                                echo"<img src=\"admin/module/quanlysanpham/uploads/". $row['image_link']."\" alt=\"\" style=\"width:120px;height:120px;\">"  ;
                                 echo "<div class=\"card-body\">";
                                echo"<h5 class=\"card-title\">".$row['name']."</h5>" ;
                                echo"<p class=\"card-text\">Số lượng: ".$row['number']."chiếc</p>";

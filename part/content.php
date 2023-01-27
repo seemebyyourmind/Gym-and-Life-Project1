@@ -1,6 +1,12 @@
 <div class="content">
     	<div class="box_contains">
         	<?php
+                if(isset($_GET['search'])&&!empty($_GET['search'])){
+                    global $search; 
+                    $search=$_GET['search'];
+                    include("part/search.php");  
+                }
+
 				if(isset($_GET['loaisp'])){
 					$loaisp=$_GET['loaisp'];
 				if($loaisp==''){}

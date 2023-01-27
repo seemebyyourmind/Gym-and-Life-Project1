@@ -51,8 +51,8 @@
             <a class="nav-link fs-5" href="index1.php?loaisp=whey">Whey </a>
           </li>
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2 fs-5" type="search" placeholder="Tìm kiếm" aria-label="Search">
+        <form class="d-flex" action="index1.php?loaisp=search" role="search" method="GET">
+          <input name ="search" class="form-control me-2 fs-5" type="search" placeholder="Tìm kiếm" aria-label="Search">
           <button class="btn btn-outline-success fs-5" type="submit">Tìm</button>
         </form>
       </div>
